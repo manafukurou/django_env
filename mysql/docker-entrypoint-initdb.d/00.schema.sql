@@ -1,4 +1,4 @@
-USE `webnium`;
+USE `mydb`;
 
 START TRANSACTION;
 
@@ -7,6 +7,6 @@ CREATE TABLE IF NOT EXISTS `test` (
   `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `description` VARCHAR(255) NOT NULL ,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='教科用テーブル';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='testテーブル';
 
 COMMIT;
